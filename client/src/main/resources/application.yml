@@ -1,0 +1,15 @@
+server:
+  port: 4041
+
+spring:
+  application:
+    name: client
+
+  kafka:
+    bootstrap-servers:
+      - localhost:9092
+      - localhost:9093
+      - localhost:9094
+    consumer:
+      group-id: chat-client-group
+      auto-offset-reset: latest
